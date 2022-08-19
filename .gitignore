@@ -1,5 +1,9 @@
 # 
 ecg/
+supplement.zip
+final_ecg.csv
+train_with_ecg.csv
+test_with_ecg.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
