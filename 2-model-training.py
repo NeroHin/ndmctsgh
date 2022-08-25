@@ -156,7 +156,7 @@ model = buildManyToOneModel(shape=x_train_single.shape)
 history = model.fit(train_data_single, epochs=EPOCHS, batch_size=BATCH_SIZE,
                     validation_data=val_data_single, callbacks=callbacks_list, verbose=1)
 
-Y_testPred = model.predict(X_test_shuffled)
+Y_testPred = model.predict(x_test)
 
 
 # AUC-ROC
