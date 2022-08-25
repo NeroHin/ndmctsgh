@@ -11,7 +11,14 @@ from tensorflow.keras.regularizers import l1, l2, l1_l2
 from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
 from sklearn.metrics import confusion_matrix, classification_report, auc, roc_curve, precision_recall_curve, average_precision_score, accuracy_score, recall_score, precision_score, f1_score
 
+# gpu config
+gpus = tf.config.experimental.list_physical_devices(device_type='gpu')
+for gpu in gpus:
+    tf.config.experimental.set_memory_growth(gpu, True)
+
+
 df_path = 'dataset/train_with_ecg.csv'
+
 
 
 def pre_process(df):
