@@ -149,7 +149,7 @@ callbacks_list = [
 ]
 
 
-buildManyToOneModel(shape=x_train_single.shape[-2:])
+model = buildManyToOneModel(shape=x_train_single.shape)
 
 
 
