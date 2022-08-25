@@ -8,6 +8,7 @@ test_with_ecg.csv
 dataset/
 plot/
 mlruns/
+data_report.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
